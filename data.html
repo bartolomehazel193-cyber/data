@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Account Activity Dashboard</title>
+
+<style>
+* {
+box-sizing: border-box;
+}
+
+body {
+margin: 0;
+padding: 25px;
+background: #101522;
+color: white;
+font-family: Arial, sans-serif;
+}
+
+.container {
+max-width: 850px;
+margin: auto;
+}
+
+header {
+background: #202b40;
+padding: 25px;
+border-radius: 12px;
+margin-bottom: 20px;
+}
+
+h1 {
+font-size: 25px;
+}
+
+h2 {
+font-size: 18px;
+color: #aebcff;
+}
+
+.card {
+background: #202b40;
+padding: 22px;
+border-radius: 12px;
+margin-bottom: 18px;
+}
+
+.info {
+display: flex;
+justify-content: space-between;
+gap: 15px;
+padding: 12px 0;
+border-bottom: 1px solid #39465c;
+}
+
+.label {
+color: #aab5c9;
+}
+
+.activity {
+border-left: 3px solid #8294ff;
+padding: 5px 0 18px 18px;
+margin-left: 5px;
+}
+
+.activity strong {
+display: block;
+margin-bottom: 5px;
+}
+
+.activity small {
+color: #aab5c9;
+}
+
+button {
+background: #6579e8;
+color: white;
+padding: 11px 17px;
+border: none;
+border-radius: 7px;
+cursor: pointer;
+margin-top: 10px;
+}
+
+button:hover {
+background: #8294ff;
+}
+
+#moreInfo {
+display: none;
+padding: 15px;
+background: #151e30;
+border-radius: 8px;
+margin-top: 12px;
+}
+
+.notice {
+color: #f4d28d;
+font-size: 12px;
+margin-top: 20px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<header>
+<p>ACCOUNT SECURITY</p>
+<h1>Account Activity Dashboard</h1>
+<p>Personal Account Activity — Data Tracked </p>
+</header>
+
+<div class="card">
+<h2>Account Information</h2>
+
+<div class="info">
+<span class="label">Email Address</span>
+<strong>vrianne26@gmail.com</strong>
+</div>
+
+<div class="info">
+<span class="label">Account Type</span>
+<strong>Google Account</strong>
+</div>
+
+<div class="info">
+<span class="label">Device Used</span>
+<strong>iPhone 11</strong>
+</div>
+</div>
+
+<div class="card">
+<h2>Location Data (Illustrative)</h2>
+
+<div class="info">
+<span class="label">IP Address</span>
+<strong>112.203.45.78</strong>
+</div>
+
+<div class="card">
+<h2>Location Data (Approximate)</h2>
+
+<p>17 Jacinto St. Concepcion, Malabon City, Metro Manila, Philippines</p>
+<iframe src="https://www.google.com/maps/embed?pb=!4v1795461234824!6m8!1m7!1sThHo29_02ZMegHw7AspzrQ!2m2!1d14.66618659856296!2d120.9497823628451!3f27.75318562708287!4f-20.935523685462286!5f0.7820865974627469" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+
+<p style="color:#aab5c9; font-size:12px;">
+Map preview for demonstration purposes.
+This does not represent verified account location data.
+</p>
+</div>
+
+<div class="info">
+<span class="label">Approximate Location</span>
+<strong>Concepcion, Malabon City, Metro Manila</strong>
+</div>
+
+<div class="info">
+<span class="label">17 Jacinto St. Concepcion, Malabon City</span>
+<strong>Traced</strong>
+</div>
+</div>
+
+<div class="card">
+<h2>Recent Activity</h2>
+
+<div class="activity">
+<strong>November 22, 2026 • 1:50 AM</strong>
+Logged in (iPhone 11)
+<br>
+<small>Concepcion, Malabon City, Philippines</small>
+</div>
+
+<div class="activity">
+<strong>November 20, 2026 • 9:14 PM</strong>
+Used Google Maps
+<br>
+<small>Malabon City, Philippines</small>
+</div>
+
+<div class="activity">
+<strong>November 18, 2026 • 11:37 AM</strong>
+Changed account settings
+<br>
+<small>Concepcion, Malabon City, Philippines</small>
+</div>
+
+<div class="activity">
+<strong>November 15, 2026 • 8:22 PM</strong>
+Logged in (Chrome)
+<br>
+<small>Quezon City, Philippines</small>
+</div>
+</div>
+
+<div class="card">
+<h2>Additional Information</h2>
+
+<button onclick="toggleInfo()">
+View Additional Details
+</button>
+
+<div id="moreInfo">
+<p><strong>Device:</strong> iPhone 11</p>
+<p><strong>Account:</strong> Google Account</p>
+<p><strong>Report type:</strong> Data Traced </p>
+<p><strong>Verification:</strong> Not independently verified</p>
+</div>
+</div>
+
+<p class="notice">
+</p>
+
+</div>
+
+<script>
+function toggleInfo() {
+const details = document.getElementById("moreInfo");
+
+if (details.style.display === "block") {
+details.style.display = "none";
+} else {
+details.style.display = "block";
+}
+}
+</script>
+
+</body>
+</html>
